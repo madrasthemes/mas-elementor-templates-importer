@@ -1,0 +1,24 @@
+{
+  "name": "mas-elementor-templates-importer",
+  "title": "MAS Elementor Templates Importer",
+  "version": "1.0.0",
+  "homepage": "https://madrasthemes.com/mas-elementor-templates-importer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madrasthemes/mas-elementor-templates-importer.git"
+  },
+  "license": "GPL-3.0+",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-wp-i18n": "^1.0.3"
+  },
+  "engines": {
+    "node": ">=6.9.4",
+    "npm": ">=1.1.0"
+  }
+}
