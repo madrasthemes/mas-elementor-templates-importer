@@ -1,0 +1,46 @@
+# Copyright (C) 2020 MadrasThemes
+# This file is distributed under the same license as the MAS Elementor Templates Importer package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MAS Elementor Templates Importer 1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"https://github.com/madrasthemes/mas-elementor-templates-importer/issues\n"
+"POT-Creation-Date: 2020-09-28 05:09:06+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: mas-elementor-templates-importer.php:357
+#: mas-elementor-templates-importer.php:366
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: templates/single-elementor_library.php:37
+msgid "Continue reading"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "MAS Elementor Templates Importer"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://themeforest.net/user/madrasthemes/portfolio"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"MAS Elementor Templates Importer is a free plugin that allows you to to "
+"import templates for Elementor"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "MadrasThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://madrasthemes.com/"
+msgstr ""
