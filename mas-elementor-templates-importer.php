@@ -210,7 +210,8 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
          * @return void
          */
         public function register_route() {
-            register_rest_route( 'mastemp/v1', '/categories/(?P<type>[a-zA-Z0-9-]+)', array(
+            register_rest_route( 'mastemp/v1', '/categories/(?P<type>[a-zA-Z0-9-]+)',
+                array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_categories' ),
                     'args' => array(
@@ -220,10 +221,14 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
+                    'permission_callback' => function () {
+                        return current_user_can( 'edit_posts' );
+                    },
                 )
             );
 
-            register_rest_route( 'mastemp/v1', '/keywords/(?P<type>[a-zA-Z0-9-]+)', array(
+            register_rest_route( 'mastemp/v1', '/keywords/(?P<type>[a-zA-Z0-9-]+)',
+                array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_keywords' ),
                     'args' => array(
@@ -233,10 +238,14 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
+                    'permission_callback' => function () {
+                        return current_user_can( 'edit_posts' );
+                    },
                 )
             );
 
-            register_rest_route( 'mastemp/v1', '/templates/(?P<type>[a-zA-Z0-9-]+)', array(
+            register_rest_route( 'mastemp/v1', '/templates/(?P<type>[a-zA-Z0-9-]+)',
+                array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_templates' ),
                     'args' => array(
@@ -246,10 +255,14 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
+                    'permission_callback' => function () {
+                        return current_user_can( 'edit_posts' );
+                    },
                 )
             );
 
-            register_rest_route( 'mastemp/v1', '/template/(?P<id>\d+)', array(
+            register_rest_route( 'mastemp/v1', '/template/(?P<id>\d+)',
+                array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_template' ),
                     'args' => array(
@@ -259,12 +272,19 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
+                    'permission_callback' => function () {
+                        return current_user_can( 'edit_posts' );
+                    },
                 )
             );
 
-            register_rest_route( 'mastemp/v1', '/info/', array(
+            register_rest_route( 'mastemp/v1', '/info/',
+                array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_info' ),
+                    'permission_callback' => function () {
+                        return current_user_can( 'edit_posts' );
+                    },
                 )
             );
         }
