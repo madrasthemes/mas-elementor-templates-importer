@@ -221,9 +221,7 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
-                    'permission_callback' => function () {
-                        return current_user_can( 'edit_posts' );
-                    },
+                    'permission_callback' => '__return_true',
                 )
             );
 
@@ -238,9 +236,7 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
-                    'permission_callback' => function () {
-                        return current_user_can( 'edit_posts' );
-                    },
+                    'permission_callback' => '__return_true',
                 )
             );
 
@@ -255,9 +251,7 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
-                    'permission_callback' => function () {
-                        return current_user_can( 'edit_posts' );
-                    },
+                    'permission_callback' => '__return_true',
                 )
             );
 
@@ -272,9 +266,7 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                             }
                         ),
                     ),
-                    'permission_callback' => function () {
-                        return current_user_can( 'edit_posts' );
-                    },
+                    'permission_callback' => '__return_true',
                 )
             );
 
@@ -282,9 +274,7 @@ if( ! class_exists( 'MAS_Elementor_Templates_Importer' ) ) {
                 array(
                     'methods' => 'GET',
                     'callback' => array( $this, 'mastemp_v1_info' ),
-                    'permission_callback' => function () {
-                        return current_user_can( 'edit_posts' );
-                    },
+                    'permission_callback' => '__return_true',
                 )
             );
         }
